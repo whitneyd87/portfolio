@@ -1,0 +1,163 @@
+#contact {
+	align-items: center;
+	background: rgb(182,139,187);
+	background: linear-gradient(180deg, rgba(182,139,187,1) 0%, rgba(206,182,209,1) 100%);
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	height: 100%;
+	padding: 60px 0;
+	text-align: center;
+	text-shadow: 1px 1px 2px #878686;
+	width: 100%;
+}
+
+.content {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+h1 {
+	letter-spacing: 1px;
+	margin: 0;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+p {
+	margin: 0;
+	padding-bottom: 60px;
+	width: 100%;
+}
+
+p span {
+	display: block;
+}
+
+form {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	width: 90%;
+}
+
+input,
+textarea {
+	box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+	outline: none !important;
+	border: 1px solid #b68bbb;
+}
+
+.formField {
+	align-items: flex-start;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin: 0;
+	width: 100%;
+}
+
+.nameField {
+	align-items: flex-start;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	width: 45%;
+}
+
+.error-placeholder {
+	height: 40px;
+	width: 100%;
+}
+
+.error-placeholder p {
+	color: #FF1C46;
+	font-size: 0.75rem;
+	font-weight: bold;
+	padding: 5px 0;
+	margin: 0;
+	text-align: left;
+	text-shadow: none;
+	width: 100%;
+}
+
+.error {
+	width: 100%;
+}
+
+.name {
+	background-color: #ffffff;
+	border: 1px solid #6a476e;
+	border-radius: 5px;
+	font-family: Gilroy Light;
+	margin: 0;
+	padding: 10px;
+	width: 100%;
+}
+
+.email,
+.message {
+	background-color: #ffffff;
+	border: 1px solid #6a476e;
+	border-radius: 5px;
+	font-family: Gilroy Light;
+	margin: 0;
+	padding: 10px;
+	width: 100%;
+}
+
+.message { 
+	height: 100px;
+}
+
+.emailBtn {
+	background-color: #6a476e;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	font-family: Gilroy Light;
+	font-size: 1.275rem;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 10px;
+	-webkit-appearance: none !important;
+	width: 100%;
+}
+
+.emailBtn:focus {
+	background-color: #1a1a1a;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	.content {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+
+	.content {
+		width: 30%;
+	}
+
+	.name,
+	.email,
+	.message {
+		font-size: 1rem;
+	}
+
+	.message {
+		height: 150px;
+	}
+
+}

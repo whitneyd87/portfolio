@@ -1,0 +1,94 @@
+<section id="contact">
+
+	<div class="content">
+
+		<h1>Let's Connect!</h1>
+		
+		<p>I'd love to hear about your idea,<span> or available position</span></p>
+
+		<form [formGroup]="emailForm">
+			
+			<div class="nameField">	
+				<input formControlName="first" 
+				class="name" 
+				type="text" 
+				name="first" 
+				placeholder="First Name">
+
+				<div class="error-placeholder">
+					
+					<div *ngIf="first.errors && first.invalid && first.touched" class="error">
+
+		            	<p>Please enter a valid first name.</p>
+
+		        	</div>
+
+		        </div>
+
+	        </div>
+
+	        <div class="nameField">
+
+				<input formControlName="last" 
+				class="name" 
+				type="text" 
+				name="last" 
+				placeholder="Last Name" >
+
+				<div class="error-placeholder">
+
+					<div *ngIf="last.errors && last.invalid && last.touched" class="error">
+
+		            	<p>Please enter a valid last name.</p>
+
+		        	</div>
+
+		        </div>
+
+	        </div>
+
+	        <div class="formField">
+			
+				<input formControlName="email" 
+				class="email" 
+				type="email" 
+				name="email" 
+				placeholder="name@email.com" >
+
+				<div class="error-placeholder">
+
+					<div *ngIf="email.errors && email.invalid && email.touched" class="error">
+		            	
+		            	<p>Please enter a valid email.</p>
+
+		        	</div>
+
+		        </div>
+
+	        </div>
+
+	        <div class="formField">
+			
+				<textarea formControlName="message" 
+				class="message" 
+				placeholder="Message"></textarea>
+
+				<div class="error-placeholder">
+
+					<div *ngIf="message.invalid && message.touched" class="error">
+
+		            	<p>Please enter your message.</p>
+
+		        	</div>
+
+		        </div>
+
+			</div>
+
+			<input  [disabled]="emailForm.invalid || loading" class="emailBtn" type="submit" name="submit" value="Say Hi" (click)="sendEmail()">
+
+		</form>
+
+	</div>
+
+</section>

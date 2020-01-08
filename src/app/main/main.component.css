@@ -1,0 +1,141 @@
+.main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 0 20px;
+}
+
+.main-vector {
+  margin: 0;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.main-vector img {
+  width: 100%;
+}
+
+.header-container {
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-family: Gilroy ExtraBold;
+  font-size: 10vw;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.subheader {
+  font-size: 5vw;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+nav {
+  padding: 80px 0;
+  width: 100%
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navBtn {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.3);
+  color: #1a1a1a;
+  font-family: Gilroy Light;
+  font-size: 1rem;
+  height: 100%;
+  letter-spacing: 2px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.workBtn {
+  padding: 15px 20px;
+}
+
+.active-link {
+  background-color: #b68bbb;
+  color: white;
+  outline: none !important;
+}
+
+@media only screen and (min-width: 768px) {
+  
+
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-vector {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+
+  .header-container {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  .subheader {
+    font-size: 2.5vw;
+    padding: 10px 0;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .container {
+    padding: 90px 0 0 0;
+  }
+
+  .main-vector {
+    width: 45%;
+  }
+
+  .header-container {
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .subheader {
+    font-size: 2vw;
+    line-height: 1.75;
+    padding: 10px 0;
+  }
+
+
+
+}
