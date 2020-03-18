@@ -8,7 +8,7 @@ import { FormGroup, FormControl, FormBuilder, Validators } from "@angular/forms"
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  
+
   loading = false;
 
   emailForm: FormGroup;
@@ -69,9 +69,6 @@ export class ContactComponent implements OnInit {
     this.http.sendEmail("https://wdemail.herokuapp.com/", user).subscribe(
       data => {
         let res:any = data; 
-        console.log(
-          `My name is ${user.firstName} ${user.lastName}. My email is ${user.emailAdd}. ${user.messageText}`
-        );
       },
       err => {
         console.log(err);
@@ -84,4 +81,3 @@ export class ContactComponent implements OnInit {
     alert('Your message has been sent');
   }
 }
-
